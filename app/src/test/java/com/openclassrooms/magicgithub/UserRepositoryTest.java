@@ -23,14 +23,14 @@ import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInA
  */
 @RunWith(JUnit4.class)
 public class UserRepositoryTest {
-    
+
     private UserRepository userRepository;
-    
+
     @Before
     public void setup() {
         userRepository = Injection.createUserRepository();
     }
-    
+
     @Test
     public void getUsersWithSuccess() {
         List<User> usersActual = userRepository.getUsers();
